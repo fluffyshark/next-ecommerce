@@ -1,0 +1,53 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    @include flex(center, inherit, inherit);
+
+    .wrapper {
+        width: 1000px;
+        height: 100%;
+        @include flex(space-between, inherit, inherit);
+
+        .left {
+            width: 150px;
+            height: 100%;
+            @include flex(inherit, center, inherit);
+            p {color:white; font-size: 40px; margin: 0;}
+        }
+
+        .middle {
+            width: 500px;
+            height: 100%;
+            @include flex(space-around, center, inherit);
+            p {color: white; font-size: 18px; margin: 0; font-weight: bold; cursor: pointer;}
+        }
+
+        .right {
+            width: 150px;
+            height: 100%;
+            @include flex(inherit, center, inherit);
+
+            .leftBox {
+                width: 50%;
+                height: 45%;
+                @include flex(center, center, inherit);
+            }
+            .rightBox {
+                width: 50%;
+                height: 45%;
+                border-left: 1px solid #666666;
+                @include flex(center, center, inherit);
+            }
+        }
+        
+    }
+}
