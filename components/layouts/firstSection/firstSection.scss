@@ -1,0 +1,79 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+
+.firstSection {
+    width: 100%;
+    height: 600px;
+    @include flex(center, inherit, inherit);
+
+    .container {
+        width: 1000px;
+        height: 100%;
+        opacity: 0; transform: translateY(50px);
+        animation-name: container_reveal; animation-duration: 1.5s; animation-delay: 0.7s; animation-fill-mode: forwards; animation-fill-mode: ease-in-out;
+
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            @include flex(center, inherit, inherit);
+
+            .divButton {
+                width: 33.33333%;
+                height: 100%;
+                background-color: black;
+                @include flex(center, center, inherit);
+                cursor: pointer;
+
+                p {color:white; font-size: 15px; font-weight: 900; margin: 0;}
+            }
+            .selectedMenu {
+                background-color: #272727;
+                color: black;
+            }
+        }
+
+        .offerContainer {
+            width: 100%;
+            height: 500px;
+            @include flex(inherit, inherit, inherit);
+
+            .section1 {
+                width: 25%;
+                height: 100%;
+                position: relative;
+
+                .divider {width: 100%; height: 2px; background-color: #e0e0e0; position: absolute; top: 249px; left: 0; z-index: 2;}
+                img {width: 100%; height: 50%;}
+            }
+
+            .section2 {
+                width: 50%;
+                height: 100%;
+
+                img {width: 100%; height: 100%;}
+            }
+
+            .section3 {
+                width: 25%;
+                height: 100%;
+                position: relative;
+
+                .divider {width: 100%; height: 2px; background-color: #e0e0e0; position: absolute; top: 249px; left: 0; z-index: 2;}
+                img {width: 100%; height: 50%;}
+            }
+        }
+    }
+}
+
+
+@keyframes container_reveal { 
+    from {opacity: 0; transform: translateY(50px);} 
+    to {opacity:1; transform: translateY(-50px);} 
+}

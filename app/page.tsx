@@ -1,5 +1,6 @@
 "use client"
 
+import FirstSection from "@/components/layouts/firstSection/FirstSection"
 import Frontpage from "@/components/layouts/frontpage/Frontpage"
 import PreLoader from "@/components/layouts/preloader/PreLoader"
 import { useState } from "react"
@@ -17,7 +18,12 @@ export default function Home() {
   return (
     <main>
       {!loaded && <PreLoader/> }
-      {loaded && <Frontpage/>}
+      {loaded && 
+        <>
+          <Frontpage/>
+          <FirstSection/>
+        </>
+      }
     </main>
   )
 }
