@@ -35,15 +35,28 @@ const FirstSection = (props: Props) => {
             </div>
             <div className="offerContainer">
                 <div className="section1">
-                    <Image src={shoe01} alt="" />
+                    <div className="itemContainer">
+                        <Image src={shoe01} alt="" />
+                        <div className="itemTexts"><p>Velocity Nitro 2</p><p>$ 140.00</p></div>
+                    </div>
                     <div className="divider"></div>
-                    <Image src={shoe02} alt="" style={{transform: "translateY(-4px)"}} />
+                    <div className="itemContainer">
+                        <Image src={shoe02} alt="" />
+                        <div className="itemTexts"><p>Softride Enzo NXT</p><p>$ 80.00</p></div>
+                    </div>
                 </div>
                 <div className="section2"><Image src={blue_promotion} alt="" /></div>
                 <div className="section3">
-                    <Image src={runningimage} alt="" />
+                    <div className="itemContainer">
+                        <Image src={runningimage} alt="" />
+                      
+                    </div>
                     <div className="divider"></div>
-                    <Image src={shoe03} alt="" style={{transform: "translateY(-4px)"}} />
+                    <div className="itemContainer">
+                        <Image src={shoe03} alt=""/>
+                        <div className="itemTexts"><p>Retaliate Block</p><p>$ 90.00</p></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
