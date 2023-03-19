@@ -1,0 +1,123 @@
+@mixin animation($name, $smooth, $duration, $delay, $mode, $interation) {
+    animation-name: $name;
+    animation-timing-function: $smooth;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-fill-mode: $mode;
+    animation-iteration-count: $interation;
+}
+
+
+.frontText01 {
+    width: 100px;
+    height: 40px;
+    transform: translateY(-50px);
+    position: relative;
+    @include animation(firstText_move, ease-in-out, 1s, 1s, forwards, none);
+ 
+    p {
+        position: absolute;
+        top: 0;
+        color:white; font-size: 30px; margin: 0; font-weight: 300; 
+        @include animation(your_text_moveDown, ease-in-out, 1s, 7.2s, forwards, none);
+    }
+}
+
+@keyframes firstText_move { 
+    from {transform: translateY(-50px);} 
+    to {transform: translateY(0px); } 
+}
+
+@keyframes your_text_moveDown { 
+    from {transform: translateY(0px);} 
+    to {transform: translateY(30px); font-size: 100px; font-weight: 900; } 
+}
+
+.frontText02 {
+    width: 105%;
+    height: 100px;
+    transform: translateY(-15px);
+    transform: translateX(-350px);
+    position: relative;
+    overflow: hidden;
+    @include animation(secondText_move, ease-in-out, 1s, 1.2s, forwards, none);
+    p { color:white; font-size: 100px; margin: 0; font-weight: 900; letter-spacing: 4px; }
+}
+
+@keyframes secondText_move { 
+    from {transform: translateX(-350px);} 
+    to {transform: translateX(0px); } 
+}
+
+
+#text01 {
+    position: relative;
+    top: -10px;
+    @include animation(text01_MoveDown, ease-in-out, 1.2s, 3s, forwards, none);
+  }
+  
+@keyframes text01_MoveDown { from {transform: translateY(0px);} to {transform: translateY(100px);} }
+
+#text02 {
+    position: absolute;
+    top: -110px; 
+    @include animation(text02_03_MoveDown, ease-in-out, 2.7s, 3.3s, forwards, none);
+  }
+  #text03 {
+    position: absolute;
+    top: -110px; 
+    @include animation(text02_03_MoveDown, ease-in-out, 2.7s, 5.3s, forwards, none);
+  }
+
+  @keyframes text02_03_MoveDown {
+    0% {transform: translateX(0);}
+    
+    33% {transform: translateY(100px); }
+    66% {transform: translateY(100px); }
+   
+    100% {transform: translateY(200px); }
+  }
+
+
+
+
+.frontText03 {
+    width: 100%;
+    height: auto;
+    transform: translateY(-35px);
+    transform: translateX(700px);
+    @include animation(thirdText_move, ease-in-out, 1.2s, 1.4s, forwards, none);
+    p { color:white; font-size: 100px; margin: 0; font-weight: 900; letter-spacing: 4px; transform: translateY(-10px);}
+}
+
+@keyframes thirdText_move { 
+    from {transform: translateX(700px);} 
+    to {transform: translateX(0px); } 
+}
+
+
+.frontText04 {
+    width: 100%;
+    height: auto;
+    transform: translateY(100px);
+    @include animation(fourthText_move, ease-in-out, 1s, 1.5s, forwards, none);
+    p { color:white; font-size: 30px; margin: 0; font-weight: 900; letter-spacing: 2px;}
+}
+
+@keyframes fourthText_move { 
+    from {transform: translateY(100px);} 
+    to {transform: translateY(-15px); } 
+}
+
+.frontText05 {
+    width: 100%;
+    height: auto;
+    transform: translateY(100px);
+    @include animation(fifthText_move, ease-in-out, 1s, 1.6s, forwards, none);
+    p { color:white; font-size: 25px; margin: 0; font-weight: 300; letter-spacing: 2px;}
+}
+
+@keyframes fifthText_move { 
+    from {transform: translateY(100px);} 
+    to {transform: translateY(-10px); } 
+}

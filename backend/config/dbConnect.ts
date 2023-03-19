@@ -7,7 +7,6 @@ const dbConnect = (): void => {
 
   mongoose.set("strictQuery", false);
 
-  console.log(process.env.DB_URI);
   if (!process.env.DB_URI) {
     throw new Error("DB_URI environment variable is not defined.");
   }

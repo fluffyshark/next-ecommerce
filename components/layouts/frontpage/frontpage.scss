@@ -1,0 +1,33 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+
+.frontpage {
+    width: 100%;
+    height: calc(80vh - 60px);
+    background-image: url("../../../app/assets/images/background01.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation-name: frontpage_reveal; animation-duration: 1.5s; animation-delay: 0.7s; animation-fill-mode: forwards; animation-fill-mode: ease-in-out; 
+    opacity: 0;
+    @include flex(center, center, inherit);
+
+    .textContainer {
+        width: 650px;
+        height: auto;
+        transform: translateX(-200px);
+        overflow: hidden;
+    }
+}
+
+
+@keyframes frontpage_reveal { 
+    from {opacity: 0;} 
+    to {opacity:1; } 
+}
