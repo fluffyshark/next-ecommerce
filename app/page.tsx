@@ -3,6 +3,7 @@
 import FirstSection from "@/components/layouts/firstSection/FirstSection"
 import Frontpage from "@/components/layouts/frontpage/Frontpage"
 import PreLoader from "@/components/layouts/preloader/PreLoader"
+import WomenPopular from "@/components/layouts/womenPopular/WomenPopular"
 import { useState } from "react"
 import "./page.scss"
 
@@ -22,6 +23,7 @@ export default function Home() {
         <>
           <Frontpage/>
           <FirstSection/>
+          <WomenPopular/>
         </>
       }
     </main>
