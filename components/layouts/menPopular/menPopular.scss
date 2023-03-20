@@ -1,0 +1,121 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+.menPopular {
+    width: 100%;
+    height: auto;
+    @include flex(center, inherit, inherit);
+
+    .container {
+        width: 1000px;
+        height: 1450px;
+
+        .title {
+            width: 100%;
+            height: 110px;
+            p:nth-child(1) {font-size: 40px; margin: 0; font-weight: 900; letter-spacing: 2px;}
+            p:nth-child(2) {font-size: 17px; margin: 0; color: #fa4756;}
+        }
+
+        .menPromotion {
+            width: 100%;
+            height: 250px;
+            background-color: green;
+            @include flex(center, inherit, inherit);
+            img {height: 100%; width: 55%;}
+
+            .container {
+                height: 100%;
+                width: calc(250px * 1.86486);
+                position: relative;
+                img {height: 100%; width: 100%;}
+
+                .text {
+                    width: 200px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: calc(100% - 200px);
+                    @include flex(center, inherit, column);
+
+                    p:nth-child(1) {font-size: 17px; margin: 0; font-weight: 900; margin-top: 40px;}
+                    p:nth-child(2) {font-size: 12px; margin: 0; font-weight: 400; margin-top: 2px;}
+                    p:nth-child(3) {color: #fa4756; font-size: 17px; font-weight: bold; margin: 0; margin-top: 10px;}
+
+                    .imageContainer {
+                        width: 100%; 
+                        height: 93px; 
+                        transform: translateX(-22px); 
+                        margin-top: 40px;
+                        cursor: pointer;
+
+                        img {width: 100%; height: 100%;}
+
+                        p {color: white; font-size: 15px; margin: 0; font-weight: bold; position: absolute; top: 30px; left: calc(50% - 35px);}
+                    }
+                    
+                }
+            }
+        }
+
+        .shoesContainer {
+            width: 100%;
+            height: 500px;
+            background-color: yellow;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .womanAuction {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            margin-top: 15px;
+
+            img {width: 100%; height: 100%;}
+
+            .textContainer {
+                width: 60%;
+                height: 100%;
+                position: absolute;
+                top: 0; left: 30px;
+                @include flex(center, inherit, column);
+                
+
+                p:nth-child(1) { color: white; font-size: 25px; margin: 0; font-weight: 300; margin-top: 20px;}
+                p:nth-child(3) {width: 400px; color: white; font-size: 15px; margin: 0; font-weight: 400; line-height: 23px;}
+                p:nth-child(4) { color: white; font-size: 60px; margin: 0; margin-top: 30px; font-weight: 900; letter-spacing: 2px;}
+                
+                .titleContainer {
+                    width: 100%;
+                    height: 55px;
+                    margin-top: 30px;
+                    display: flex;
+
+                    p:nth-child(1) { color: white; font-size: 35px; margin: 0; font-weight: 900; letter-spacing: 2px;}
+                    p:nth-child(2) { color: white; font-size: 34px; margin: 0; margin-left: 10px; font-weight: 300; letter-spacing: 2px;}
+                }
+
+                .imageContainer {
+                    width: 250px; 
+                    height: 112.5px; 
+                    transform: translateX(-22px); 
+                    margin-top: 25px;
+                    cursor: pointer;
+
+                    img {width: 100%; height: 100%;}
+
+                    p:nth-child(2) {color: white; font-size: 20px; margin: 0; font-weight: bold; position: absolute; top: 31px; left: calc(50% - 47px); letter-spacing: 1px;}
+                    p:nth-child(3) {color: white; font-size: 11px; margin: 0; font-weight: 300; position: absolute; top: 48px; left: calc(50% - 27px);}
+
+                }
+
+            }
+        }
+    }
+}
