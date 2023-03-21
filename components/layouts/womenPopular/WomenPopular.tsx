@@ -20,8 +20,6 @@ const WomenPopular = (props: Props) => {
 
   window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
-   
-    console.log(scroll)
 
     if (scroll > 599) {(document.getElementById("womanPopularTitle") as HTMLFormElement).classList.add("fadeInTop");}
 
