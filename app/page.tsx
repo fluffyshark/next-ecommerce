@@ -2,6 +2,7 @@
 
 import FirstSection from "@/components/layouts/firstSection/FirstSection"
 import Frontpage from "@/components/layouts/frontpage/Frontpage"
+import LogoCollection from "@/components/layouts/logoCollection/LogoCollection"
 import MenPopular from "@/components/layouts/menPopular/MenPopular"
 import PreLoader from "@/components/layouts/preloader/PreLoader"
 import WomenPopular from "@/components/layouts/womenPopular/WomenPopular"
@@ -26,6 +27,7 @@ export default function Home() {
           <FirstSection/>
           <WomenPopular/>
           <MenPopular/>
+          <LogoCollection/>
         </>
       }
     </main>

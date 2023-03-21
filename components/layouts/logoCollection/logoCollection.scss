@@ -1,0 +1,32 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+.logoCollection {
+    width: 100%;
+    height: auto;
+    @include flex(center, inherit, inherit);
+
+    .container {
+        width: 1000px;
+        height: 350px;
+
+        .logos {
+            width: 100%;
+            height: 250px;
+            background-color: #f9f9f9;
+            @include flex(center, inherit, inherit);
+            flex-wrap: wrap;
+
+            .logoItem {
+                width: 20%;
+                height: 50%;
+                @include flex(center, center, inherit);
+            }
+        }
+    }
+
+}
