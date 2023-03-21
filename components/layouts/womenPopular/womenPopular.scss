@@ -5,6 +5,15 @@
     flex-direction: $direction;
 }
 
+@mixin animation($name, $smooth, $duration, $delay, $mode, $interation) {
+    animation-name: $name;
+    animation-timing-function: $smooth;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-fill-mode: $mode;
+    animation-iteration-count: $interation;
+}
+
 .womenPopular {
     width: 100%;
     height: auto;
@@ -24,7 +33,6 @@
         .womenPromotion {
             width: 100%;
             height: 250px;
-            background-color: green;
             @include flex(center, inherit, inherit);
             img {height: 100%; width: 55%;}
 
@@ -65,7 +73,6 @@
         .shoesContainer {
             width: 100%;
             height: 500px;
-            background-color: yellow;
             margin-top: 15px;
             display: flex;
             flex-wrap: wrap;
@@ -118,4 +125,19 @@
             }
         }
     }
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px)
+}
+
+
+.fadeInTop {
+    @include animation(fadeInTop, ease-in-out, 1s, 0s, forwards, none);
+}
+
+@keyframes fadeInTop { 
+    from {opacity: 0; transform: translateY(50px);} 
+    to {opacity: 1; transform: translateY(0px);} 
 }
