@@ -1,6 +1,7 @@
 import Navbar from '@/components/layouts/navbar/Navbar'
 import './globals.css'
 import { Roboto } from "next/font/google"
+import Footer from '@/components/layouts/footer/Footer'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   )

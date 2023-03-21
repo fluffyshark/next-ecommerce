@@ -1,0 +1,76 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    @include flex(inherit, center, column);
+
+    .top {
+        width: 1400px;
+        height: 300px;
+        @include flex(center, inherit, none);
+
+        .main {
+             width: 20%;
+             height: 100%;
+            p {color: white; font-size: 15px; font-weight: bold; margin: 0; margin-top: 15px; cursor: pointer;}
+            p:nth-child(1) {margin-top: 40px; }
+        }
+        .gethelp {
+            width: 20%;
+            height: 100%;
+            p {color: #686a6a; font-size: 13px; margin: 0; margin-top: 15px; cursor: pointer;}
+            p:nth-child(1) {margin-top: 40px; color: white; font-size: 15px; font-weight: bold; cursor: inherit;}
+        }
+        .about {
+            width: 20%;
+            height: 100%;
+            p {color: #686a6a; font-size: 13px; margin: 0; margin-top: 15px; cursor: pointer;}
+            p:nth-child(1) {margin-top: 40px; color: white; font-size: 15px; font-weight: bold; cursor: inherit;}
+        }
+        .join {
+            width: 20%;
+            height: 100%;
+            p {color: #686a6a; font-size: 13px; margin: 0; margin-top: 15px; cursor: pointer; }
+            p:nth-child(1) {margin-top: 40px; color: white; font-size: 15px; font-weight: bold; cursor: inherit;}
+        }
+        .social {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+
+            .socialbox {margin-top: 40px;}
+
+        }
+      
+    }
+
+    .bottom {
+        width: 1400px;
+        height: 50px;
+        @include flex(space-between, center, none);
+
+        .locationAndRights {
+            height: 100%;
+            width: 400px;
+            @include flex(none, center, inherit);
+            p:nth-child(2) {color: white; font-size: 13px; margin: 0; margin-left: 10px;}
+            p:nth-child(3) {color: #686a6a; font-size: 13px; margin: 0; margin-left: 20px;}
+        }
+
+        .details {
+            height: 100%;
+            width: 600px;
+            @include flex(space-between, center, none);
+            p {color: #686a6a; font-size: 13px; margin: 0; cursor: pointer;}
+        }
+    }
+}
