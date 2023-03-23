@@ -1,0 +1,74 @@
+[
+    {
+    "name": "Velocity Nitro 2",
+    "description": "An all-in-one neutral running shoe for any distance, the Velocity Nitro 2 is a lightweight and sleek update to the Run PUMA roster. Featuring NITRO foam for exceptional responsiveness and ultimate cushioning, this upgrade to the original is a well-fitting and durable shoe for a smooth ride. Built for comfort at whatever speed, the versatile runner also provides enhanced visibility through reflective accents, so you can hit your stride on your time. PUMAGRIP offers multi-surface traction, from treadmill to track.",
+    "price": 140.00,
+    "promo_price": 120.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Men",
+    "featured": "top_popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/velocity_nitro_2_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/velocity_nitro_2_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/velocity_nitro_2_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Softride Enzo NXT",
+    "description": "An all-in-one neutral running shoe for any distance, the Velocity Nitro 2 is a lightweight and sleek update to the Run PUMA roster. Featuring NITRO foam for exceptional responsiveness and ultimate cushioning, this upgrade to the original is a well-fitting and durable shoe for a smooth ride. Built for comfort at whatever speed, the versatile runner also provides enhanced visibility through reflective accents, so you can hit your stride on your time. PUMAGRIP offers multi-surface traction, from treadmill to track.",
+    "price": 50.00,
+    "promo_price": 45.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Men",
+    "featured": "top_popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/softride_enzo_nxt_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/softride_enzo_nxt_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/softride_enzo_nxt_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Retaliate Block",
+    "description": "Say hello to the all-new Retaliate Block Men’s Running Shoe. This contemporary model packs a punch with bold PUMA branding and a streetstyle aesthetic while still delivering on the performance you’d expect from a PUMA essential. Zoned rubber on the outsole will stop you from slipping, and PUMA’s ultra comfortable SoftFoam insole ensures long-lasting durability. Train harder and feel sharper in these must-have shoes.",
+    "price": 90.00,
+    "promo_price": 70.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Men",
+    "featured": "top_popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/retaliate_block_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/retaliate_block_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/mens/retaliate_block_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  }
+
+]

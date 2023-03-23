@@ -8,10 +8,12 @@ import blue_promotion from "../../../app/assets/images/blue_promotion.png"
 import shoe03 from "../../../app/assets/images/shoe03.png"
 import runningimage from "../../../app/assets/images/runningimage.png"
 
-type Props = {}
 
-const FirstSection = (props: Props) => {
-    
+type Props = {
+    data: any
+  }
+
+const FirstSection = ({data}:Props) => {
 
     const menuClickHandler = (selectedMenu: string) => {
 
@@ -35,14 +37,16 @@ const FirstSection = (props: Props) => {
             </div>
             <div className="offerContainer">
                 <div className="section1">
+
+
                     <div className="itemContainer">
-                        <Image src={shoe01} alt="" />
-                        <div className="itemTexts"><p>Velocity Nitro 2</p><p>$ 140.00</p></div>
+                        <Image src={data.products[0].images[0].url} width="250" height="250" alt="" />
+                        <div className="itemTexts"><p>{data.products[0].name}</p><p>$ {data.products[0].price}.00</p></div>
                     </div>
                     <div className="divider"></div>
                     <div className="itemContainer">
-                        <Image src={shoe02} alt="" />
-                        <div className="itemTexts"><p>Softride Enzo NXT</p><p>$ 80.00</p></div>
+                        <Image src={data.products[1].images[0].url} width="250" height="250" alt="" />
+                        <div className="itemTexts"><p>{data.products[1].name}</p><p>$ {data.products[0].price}.00</p></div>
                     </div>
                 </div>
                 <div className="section2"><Image src={blue_promotion} alt="" /></div>
@@ -53,8 +57,8 @@ const FirstSection = (props: Props) => {
                     </div>
                     <div className="divider"></div>
                     <div className="itemContainer">
-                        <Image src={shoe03} alt=""/>
-                        <div className="itemTexts"><p>Retaliate Block</p><p>$ 90.00</p></div>
+                        <Image src={data.products[2].images[0].url} width="250" height="250" alt="" />
+                        <div className="itemTexts"><p>{data.products[2].name}</p><p>$ {data.products[0].price}.00</p></div>
                     </div>
                     
                 </div>

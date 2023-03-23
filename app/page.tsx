@@ -1,35 +1,16 @@
-"use client"
+import React from "react";
+import axios from "axios";
+import MainPage from "@/components/layouts/mainPage/MainPage"
 
-import FirstSection from "@/components/layouts/firstSection/FirstSection"
-import Frontpage from "@/components/layouts/frontpage/Frontpage"
-import LogoCollection from "@/components/layouts/logoCollection/LogoCollection"
-import MenPopular from "@/components/layouts/menPopular/MenPopular"
-import PreLoader from "@/components/layouts/preloader/PreLoader"
-import WomenPopular from "@/components/layouts/womenPopular/WomenPopular"
-import { useState } from "react"
-import "./page.scss"
+const getProducts = async () => {
+  const { data } = await axios.get(`${process.env.API_URL}/api/products`);
+  return data;
+};
 
+const HomePage = async () => {
+  const productsData = await getProducts();
 
-export default function Home() {
+  return <MainPage data={productsData} />;
+};
 
-  const [loaded, setLoaded] = useState(false)
-
-   setTimeout(() => {
-     setLoaded(true)
-   }, 3400);
-
-  return (
-    <main>
-      {!loaded && <PreLoader/> }
-      {loaded && 
-        <>
-          <Frontpage/>
-          <FirstSection/>
-          <WomenPopular/>
-          <MenPopular/>
-          <LogoCollection/>
-        </>
-      }
-    </main>
-  )
-}
+export default HomePage;

@@ -13,11 +13,11 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please enter product price"],
   },
+  promo_price: {
+    type: Number,
+  },
   images: [
     {
-      public_id: {
-        type: String,
-      },
       url: {
         type: String,
       },
@@ -28,16 +28,13 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter product category"],
     enum: {
-      values: [
-        "Electronics",
-        "Cameras",
-        "Laptops",
-        "Accessories",
-        "Headphones",
-        "Sports",
-      ],
-      message: "Please select correct category",
+      values: ["Men", "Women", "Kids"],
+      message: "Please select correct category1",
     },
+  },
+  featured: {
+    type: String,
+    required: [true, "Please enter if featured Popular Newest Sale"],
   },
   seller: {
     type: String,

@@ -14,9 +14,11 @@ import shoe11 from "../../../app/assets/images/shoe11.png"
 import womenAuction from "../../../app/assets/images/womenauction.png"
 import pinkBtn from "../../../app/assets/images/pinkBtn.png"
 
-type Props = {}
+type Props = {
+  data: any
+}
 
-const WomenPopular = (props: Props) => {
+const WomenPopular = ({data}:Props) => {
 
   window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
@@ -59,10 +61,14 @@ const WomenPopular = (props: Props) => {
             </div>
             
             <div className="shoesContainer">
-              <div className="itemContainer animate womenItem1">
-                <Image src={shoe4} alt="" />
-                <div className="itemTexts"><p>ForeverRUN Nitro</p><p>$ 180.00</p></div>
-              </div>
+              
+              {data.products.map((product:any) => (
+                <div key={product._id} className="itemContainer animate womenItem1">
+                  <Image src={shoe4} alt="" />
+                  <div className="itemTexts"><p>ForeverRUN Nitro</p><p>$ 180.00</p></div>
+                </div>
+              ))}
+              
               <div className="itemContainer animate womenItem1">
                 <Image src={shoe5} alt="" />
                 <div className="itemTexts"><p>Run XX WNS Nitro</p><p>$ 100.00</p></div>

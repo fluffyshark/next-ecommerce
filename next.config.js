@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ['webshop-nextjs.s3.eu-north-1.amazonaws.com'],
+  },
  
 }
 
