@@ -69,6 +69,201 @@
     ],
     "reviews": [],
     "ratings": 4
+  },
+
+  {
+    "name": "ForeverRUN NITRO",
+    "description": "The ForeverRUN NITRO dawns a new era of support and guidance for all runners, providing the softness of a full NITRO midsole without compromising stability. It features a newly developed NITRO midsole with two different densities – a softer core with a firmer rim – and an asymmetrical heel counter to hold the foot in place through every stride. The theme also continues on the outsole, thanks to a wider medial rubber segment stabilising late-stage pronation. In short, it's the perfect blend of support and cushion.",
+    "price": 180.00,
+    "promo_price": 150.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/foreverrun_nitro_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/foreverrun_nitro_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/foreverrun_nitro_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+
+  {
+    "name": "Run XX Nitro WNS",
+    "description": "Named for the woman-specific double X chromosome DNA sequence, the Run XX NITRO WNS stands behind PUMA’s RUN FOR HER motto with a progressive, female-specific design. Featuring an updated fit that hugs a woman’s foot at the heel, instep, and arch, the running shoe’s new, firmer NITRO midsole is the perfect balance of durable and lightweight. RUNGUIDE promotes proper alignment and increased stability for longer distances.",
+    "price": 160.00,
+    "promo_price": 145.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/run_xx_nitro_wns_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/run_xx_nitro_wns_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/run_xx_nitro_wns_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Deviate NITRO 2",
+    "description": "The Deviate NITRO 2 – just like v1, only improved. It’s the max cushion, max performance running shoe that makes going faster even easier. The update includes NITRO Elite foam for improved responsiveness, a reworked collar to reduce heel slip, and a lighter, asymmetrical base that works better with your body across all distances – be it short runs, marathons, and even ultras.",
+    "price": 140.00,
+    "promo_price": 125.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/deviate_nitro_2_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/deviate_nitro_2_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/deviate_nitro_2_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+
+  {
+    "name": "Electrify NITRO 2",
+    "description": "The perfect choice for runners just starting out, the Electrify NITRO 2 delivers the cushioning and reliability needed your daily jog. The dual midsole contains our lightweight, nitrogen-injected NITRO foam in the heel alongside our sturdier PROFOAMLITE throughout the rest of the midsole, allowing for an airy, cushioned ride. We’ve revamped the breathable mesh upper with a futuristic look and retooled the rest of the shoe with a rolled collar, built-in heel lock, and a special ‘cat’s’ tongue to secure the heel for every run.",
+    "price": 120.00,
+    "promo_price": 100.00,
+    "seller": "Puma",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/electrify_nitro_2_1.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/electrify_nitro_2_2.webp" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/electrify_nitro_2_3.webp" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Ghost 15",
+    "description": "Our best-selling running shoe features a trusted fit, and the signature smooth ride and soft cushioning that make it a runner favorite. The Ghost 15 is ready to take you from striding to gliding.",
+    "price": 140.00,
+    "promo_price": 120.00,
+    "seller": "Brooks",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/ghost_15_1.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/ghost_15_2.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/ghost_15_3.png" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Hyperion Max",
+    "description": "Reach your racing potential by training in the Hyperion Max women's running shoe. Offering speedy heel-to-toe transitions and plenty of ultralight cushioning helps absorb impact, you’re ready for another hard session sooner.",
+    "price": 170.00,
+    "promo_price": 150.00,
+    "seller": "Brooks",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Launch+9_1.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Launch+9_2.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Launch+9_3.png" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Glycerin 20",
+    "description": "Give your feet a break even on the toughest days. The women's Glycerin 20 neutral cushioned running shoes are the final word on comfort thanks to new, supremely soft DNA LOFT v3 cushioning, an updated, improved fit and silky smooth transitions.",
+    "price": 160.00,
+    "promo_price": 150.00,
+    "seller": "Brooks",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Glycerin_20_1.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Glycerin_20_2.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Glycerin_20_3.png" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
+  },
+
+  {
+    "name": "Adrenaline GTS 22",
+    "description": "Designed to offer a perfect balance of support and softness, the women's Adrenaline GTS 22 offers a smooth, soft ride ready for all your miles. No wonder these supportive running shoes have been known for over twenty years as a runner favorite.",
+    "price": 140.00,
+    "promo_price": 110.00,
+    "seller": "Brooks",
+    "stock": 500,
+    "category": "Women",
+    "featured": "Popular",
+    "images": [
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Adrenaline+GTS+22_1.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Adrenaline+GTS+22_2.png" 
+        },
+        {
+            "url": "https://webshop-nextjs.s3.eu-north-1.amazonaws.com/womens/Adrenaline+GTS+22_3.png" 
+        }
+    ],
+    "reviews": [],
+    "ratings": 4
   }
+
 
 ]

@@ -62,41 +62,18 @@ const WomenPopular = ({data}:Props) => {
             
             <div className="shoesContainer">
               
-              {data.products.map((product:any) => (
-                <div key={product._id} className="itemContainer animate womenItem1">
-                  <Image src={shoe4} alt="" />
-                  <div className="itemTexts"><p>ForeverRUN Nitro</p><p>$ 180.00</p></div>
-                </div>
-              ))}
-              
-              <div className="itemContainer animate womenItem1">
-                <Image src={shoe5} alt="" />
-                <div className="itemTexts"><p>Run XX WNS Nitro</p><p>$ 100.00</p></div>
-              </div>
-              <div className="itemContainer animate womenItem1">
-                <Image src={shoe6} alt="" />
-                <div className="itemTexts"><p>Deviate 2 Nitro</p><p>$ 139.00</p></div>
-              </div>
-              <div className="itemContainer animate womenItem1">
-                <Image src={shoe7} alt="" />
-                <div className="itemTexts"><p>Electrify 2 Nitro</p><p>$ 120.00</p></div>
-              </div>
-              <div className="itemContainer animate womenItem2">
-                <Image src={shoe8} alt="" />
-                <div className="itemTexts"><p>Ghost 15</p><p>$ 140.00</p></div>
-              </div>
-              <div className="itemContainer animate womenItem2">
-                <Image src={shoe9} alt="" />
-                <div className="itemTexts"><p>Grand 360</p><p>$ 290.00</p></div>
-              </div>
-              <div className="itemContainer animate womenItem2">
-                <Image src={shoe10} alt="" />
-                <div className="itemTexts"><p>Glycerin 20</p><p>$ 150.00</p></div>
-              </div>
-              <div className="itemContainer animate womenItem2">
-                <Image src={shoe11} alt="" />
-                <div className="itemTexts"><p>Adredaline GTS 22</p><p>$ 140.00</p></div>
-              </div>
+              {data.products.map((product:any) => {
+                if(product.featured === "Popular" && product.category === "Women")
+                return (
+                  <div key={product._id} className="itemContainer animate womenItem1">
+                    <Image src={product.images[0].url} width="250" height="250" alt="" />
+                    <div className="itemTexts"><p>{product.name}</p><p>$ {product.price}.00</p></div>
+                  </div>
+                )
+                
+              })} 
+               
+
             </div>
 
           <div id="womanAuction" className="womanAuction animate">
