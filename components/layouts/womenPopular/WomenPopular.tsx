@@ -73,7 +73,6 @@ const WomenPopular = ({data}:Props) => {
                 
               })} 
                
-
             </div>
 
           <div id="womanAuction" className="womanAuction animate">
