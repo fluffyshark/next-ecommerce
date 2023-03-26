@@ -2,10 +2,7 @@
 
 import Image from "next/image";
 import "./firstSection.scss"
-import shoe01 from "../../../app/assets/images/shoe01.png"
-import shoe02 from "../../../app/assets/images/shoe02.png"
 import blue_promotion from "../../../app/assets/images/blue_promotion.png"
-import shoe03 from "../../../app/assets/images/shoe03.png"
 import runningimage from "../../../app/assets/images/runningimage.png"
 
 

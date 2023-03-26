@@ -1,0 +1,91 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+
+.productsFilter {
+    width: 200px;
+    height: auto;
+    margin-left: -150px;
+    margin-top: 20px;
+    @include flex(none, center, column);
+
+    .foundItem {
+        width: 100%;
+        height: 50px;
+        @include flex(space-between, center, none);
+
+        p:nth-child(1) {color: gray; font-size: 13px; margin: 0 10px;}
+        p:nth-child(2) {color: black; font-size: 20px; font-weight: bold; margin: 0 10px 0 0;}
+    }
+    .resetFilter {
+        width: 170px;
+        height: 35px;
+        border: 2px solid gray;
+        @include flex(center, center, none);
+        cursor: pointer;
+
+        p {color: gray; font-size: 13px; letter-spacing: 1px;}
+    }
+    .searchOption {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-top: 1px solid gray;
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+
+        .default {
+            width: 100%;
+            height: 50px;
+            @include flex(space-between, center, none);
+            cursor: pointer;
+
+            p:nth-child(1) {color: black; font-size: 12px; font-weight: bold; margin: 0 0 0 10px; letter-spacing: 0.5px;}
+            p:nth-child(2) {color: gray; font-size: 13px; font-weight: bold; margin: 0 10px 0 0;}
+        }
+        .filterContent {
+            width: 100%;
+            height: calc(100% - 50px);
+
+            .inputContainer {
+                width: 100%;
+                height: 20px;
+                @include flex(none, center, none);
+
+                input {margin-left: 10px;}
+                p {margin: 0 5px; font-size: 13px; color: gray;}
+            }
+
+            .sizeBoxContainer {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3px;
+
+                .sizeBox {
+                    width: 45px;
+                    height: 45px;
+                    @include flex(center, center, inherit);
+                    background-color: rgb(228, 228, 228);
+                    cursor: pointer;
+
+                    p {color: black; font-size: 13px;}
+                }
+            }
+            
+        }
+        
+
+        
+    }
+
+}
+
+
+
