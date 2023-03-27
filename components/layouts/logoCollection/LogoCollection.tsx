@@ -20,34 +20,34 @@ const LogoCollection = (props: Props) => {
         <div className="container">
             <div className="logos">
                 <div className="logoItem">
-                    <LogoNike style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoNike style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"104.26", height:"37.17"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoSaucony style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoSaucony style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"137.63", height:"24.95"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoAdidas style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoAdidas style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"101.88", height:"68.92"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoBrooks style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoBrooks style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"182.91", height:"22.16"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoFredPerry style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoFredPerry style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"75.55", height:"79.95"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoPuma style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoPuma style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"117.64", height:"58.47"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoVans style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoVans style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"124.91", height:"45.54"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoNB style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoNB style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"91.74", height:"50"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoReebook style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoReebook style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"108.81", height:"54.59"}} />
                 </div>
                 <div className="logoItem">
-                    <LogoConverse style={{color:"#4d4d4d", hoverColor:"#eb5037"}} />
+                    <LogoConverse style={{color:"#4d4d4d", hoverColor:"#eb5037", width:"94.97", height:"63.88"}} />
                 </div>
             </div>
         </div>

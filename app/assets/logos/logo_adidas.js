@@ -19,8 +19,8 @@ function LogoAdidas({ style }) {
       fill={isHovered ? style.hoverColor : style.color}
       cursor={"pointer"}
       xmlns="http://www.w3.org/2000/svg"
-      width="101.883"
-      height="68.923"
+      width={style.width}
+      height={style.height}
       version="1.1"
       viewBox="0 0 26.957 18.236"
     >

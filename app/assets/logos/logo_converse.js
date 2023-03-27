@@ -19,8 +19,8 @@ function LogoConverse({ style }) {
       fill={isHovered ? style.hoverColor : style.color}
       cursor={"pointer"}
       xmlns="http://www.w3.org/2000/svg"
-      width="94.976"
-      height="63.881"
+      width={style.width}
+      height={style.height}
       version="1.1"
       viewBox="0 0 25.129 16.902"
     >

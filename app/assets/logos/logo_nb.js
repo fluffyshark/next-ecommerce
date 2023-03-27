@@ -19,8 +19,8 @@ function LogoNB({ style }) {
       fill={isHovered ? style.hoverColor : style.color}
       cursor={"pointer"}
       xmlns="http://www.w3.org/2000/svg"
-      width="91.746"
-      height="50.004"
+      width={style.width}
+      height={style.height}
       version="1.1"
       viewBox="0 0 24.274 13.23"
     >

@@ -12,7 +12,7 @@ const Navbar = (props: Props) => {
         <div className="left"><p>LOGO</p></div>
         <div className="middle"><p>MEN</p><p>WOMEN</p><p>KIDS</p></div>
         <div className="right">
-          <div className="leftBox"><IconBagOutline style={{color:"#ffffff", hoverColor:"#eb5037"}} /></div>
+          <div className="leftBox"><IconBagOutline style={{color:"#ffffff", hoverColor:"#eb5037", width:"19", height:"18.89"}} /></div>
           <div className="rightBox"><IconSearchOutline style={{color:"#ffffff", hoverColor:"#eb5037"}} /></div>
         </div>
       </div>

@@ -19,8 +19,8 @@ function LogoPuma({ style }) {
       fill={isHovered ? style.hoverColor : style.color}
       cursor={"pointer"}
       xmlns="http://www.w3.org/2000/svg"
-      width="117.663"
-      height="58.481"
+      width={style.width}
+      height={style.height}
       version="1.1"
       viewBox="0 0 31.132 15.473"
     >

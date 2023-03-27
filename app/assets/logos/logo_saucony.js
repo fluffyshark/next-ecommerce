@@ -19,8 +19,8 @@ function LogoSaucony({ style }) {
       fill={isHovered ? style.hoverColor : style.color}
       cursor={"pointer"}
       xmlns="http://www.w3.org/2000/svg"
-      width="137.63"
-      height="24.968"
+      width={style.width}
+      height={style.height}
       version="1.1"
       viewBox="0 0 36.414 6.606"
     >

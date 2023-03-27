@@ -1,0 +1,121 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex; 
+    align-items: $align; 
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+
+.productDetails {
+    width: 100%;
+    height: calc(100vh - 60px);
+    @include flex(inherit, inherit, inherit);
+
+    .display {
+        width: 60%;
+        height: 100%;
+        background-color: #fafafa;
+
+        .bigImage {
+            width: 100%;
+            height: 75%;
+            @include flex(center, inherit, inherit);
+
+            img {height: 100%; width: auto;}
+        }
+        .smallerImages {
+            width: 100%;
+            height: 25%;
+            @include flex(center, flex-start, inherit);
+            gap: 10px;
+
+            .imageContainer {
+                width: auto;
+                height: auto;
+                cursor: pointer;
+
+                img {width: 100px; height: 100px; border: 2px solid white}
+            }
+        }
+       
+    }
+
+    .info {
+        width: 40%;
+        height: 100%;
+        margin-left: 100px;
+        @include flex(flex-start, center, inherit);
+
+        .infoContainer {
+            width: 400px;
+            height: 800px;
+
+            .logo {
+                width: 100%;
+                height: 50px;
+                @include flex(flex-start, center, inherit);
+            }
+
+            .productName {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+                p {font-size: 40px; font-weight: bold; margin: 0;}
+            }
+
+            .color {
+                width: 100%;
+                height: auto;
+                @include flex(flex-start, inherit, inherit);
+                flex-wrap: wrap;
+                gap: 5px;
+                cursor: pointer;
+                margin-bottom: 20px;
+
+                img {width: 60px; height: 60px; margin: 0;}
+            }
+            .size {
+                width: 100%;
+                height: auto;
+                @include flex(flex-start, inherit, inherit);
+                flex-wrap: wrap;
+                gap: 5px;
+
+                .sizeBox {
+                    width: 50px; 
+                    height: 50px;
+                    border-radius: 2px;
+                    background-color: lightgrey;
+                    @include flex(center, center, inherit);
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    cursor: pointer;
+
+                    p {color: black; font-size: 15px; margin: 0;}
+                }
+            }
+            .buyAndPrice {
+                width: 100%;
+                height: 50px;
+                @include flex(flex-start, center, inherit);
+                gap: 10px;
+                margin-top: 20px;
+                gap: 30px;
+                p:nth-child(2) {font-size: 20px; font-weight: bold;}
+
+                .addToCartBtn {
+                    width: 150px;
+                    height: 50px;
+                    background-color: black;
+                    border-radius: 3px;
+                    @include flex(center, center, inherit);
+                    gap: 10px;
+                    cursor: pointer;
+
+                    p {color: white; font-size: 13px;}
+                }
+            }
+        }
+    }
+}
