@@ -24,6 +24,19 @@ const productSchema = new mongoose.Schema({
     },
   ],
 
+  colors: [
+    {
+      color: {
+        type: String,
+      },
+      url: {
+        type: String,
+      },
+    },
+  ],
+
+  sizes: [Number],
+
   category: {
     type: String,
     required: [true, "Please enter product category"],

@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import "./productDetails.scss"
 import LogoBrooks from '@/app/assets/logos/logo_brooks';
@@ -20,6 +20,8 @@ type Props = {
 }
 
 const ProductDetails = ({product}:Props) => {
+
+  const [displayImage, setDisplayImage] = useState(product.images[0].url)
 
   function showCorrectLogotype() {
 
@@ -43,17 +45,15 @@ const ProductDetails = ({product}:Props) => {
     return logo
   }
 
-  console.log(product.seller)
-
 
   return (
     <div className='productDetails'>
         <div className="display">
-          <div className="bigImage"><Image src={product.images[0].url} width="750" height="750" alt="" /></div>
+          <div className="bigImage"><Image src={displayImage} width="750" height="750" alt="" /></div>
           <div className="smallerImages">
-            <div className="imageContainer"><Image src={product.images[0].url} width="100" height="100" alt="" /></div>
-            <div className="imageContainer"><Image src={product.images[1].url} width="100" height="100" alt="" /></div>
-            <div className="imageContainer"><Image src={product.images[2].url} width="100" height="100" alt="" /></div>
+            <div className="imageContainer" onClick={() => setDisplayImage(product.images[0].url)}><Image src={product.images[0].url} width="100" height="100" alt="" /></div>
+            <div className="imageContainer" onClick={() => setDisplayImage(product.images[1].url)}><Image src={product.images[1].url} width="100" height="100" alt="" /></div>
+            <div className="imageContainer" onClick={() => setDisplayImage(product.images[2].url)}><Image src={product.images[2].url} width="100" height="100" alt="" /></div>
           </div>
         </div>
         <div className="info">
@@ -63,18 +63,9 @@ const ProductDetails = ({product}:Props) => {
             <div className="rating"></div>
             <div className="description"><p>{product.description.substring(0, 200)}...</p></div>
             <div className="color">
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
-              <Image src={product.images[0].url} width="100" height="100" alt="" />
+              {product.colors.map((color:any, i:number) => {
+                return <Image key={i} src={product.colors[i].url} width="100" height="100" alt="" onClick={() => setDisplayImage(product.colors[i].url)}/>
+              })}
             </div>
             <div className="size">
               <div className="sizeBox"><p>7.0</p></div>

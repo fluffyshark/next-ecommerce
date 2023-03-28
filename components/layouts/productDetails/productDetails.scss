@@ -29,11 +29,13 @@
             height: 25%;
             @include flex(center, flex-start, inherit);
             gap: 10px;
+            background-color: white;
 
             .imageContainer {
                 width: auto;
                 height: auto;
                 cursor: pointer;
+                margin-top: 10px;
 
                 img {width: 100px; height: 100px; border: 2px solid white}
             }
@@ -62,6 +64,10 @@
                 height: auto;
                 margin-top: 10px;
                 p {font-size: 40px; font-weight: bold; margin: 0;}
+            }
+
+            .description {
+                p {font-size: 14px;}
             }
 
             .color {
