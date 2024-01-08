@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['webshop-nextjs.s3.eu-north-1.amazonaws.com'],
+    domains: ['ALLOWED DOMAINS'],
   },
  
 }
